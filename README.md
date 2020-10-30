@@ -12,6 +12,30 @@
   - use egjs
 - deploy site : .
 
+## egjs
+
+### [egjs-agent](https://github.com/naver/egjs-agent) [[website](https://naver.github.io/egjs-agent/)]
+
+### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
+
+### [egjs-component](https://github.com/naver/egjs-component) [[website](https://naver.github.io/egjs-component/)]
+
+### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
+
+### [egjs-infinitegrid](https://github.com/naver/egjs-infinitegrid) [[website](https://naver.github.io/egjs-infinitegrid/)]
+
+### [egjs-persist](https://github.com/naver/egjs-persist) [[website](https://naver.github.io/egjs-persist/)]
+
+### [egjs-rotate](https://github.com/naver/egjs-rotate) [[website](https://naver.github.io/egjs-rotate/)]
+
+### [egjs-view360](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/)]
+
+### [egjs-visible](https://github.com/naver/egjs-visible) [[website](https://naver.github.io/egjs-visible/)]
+
+### [egjs-jquery-pauseresume](https://github.com/naver/egjs-jquery-pauseresume) [[website](https://naver.github.io/egjs-jquery-pauseresume/)]
+
+### [egjs-jquery-transform](https://github.com/naver/egjs-jquery-transform) [[website](https://naver.github.io/egjs-jquery-transform/)]
+
 ## 삽질
 
 웹팩 5 ㅠㅠ 빌드 버전문제 (webpack 3개 패키지랑 플러그인까지)
