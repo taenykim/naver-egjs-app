@@ -2,5 +2,7 @@
 	"tabWidth": 1,
 	"useTabs": true,
 	"trailingComma": "all",
-	"bracketSpacing": false
+	"bracketSpacing": false,
+	"functionSpacing": false,
+	"spaceBeforeFunctionParen": false
 }

@@ -1,6 +1,7 @@
 {
 	"extends": "naver",
 	"rules": {
-		"array-element-newline": "off"
+		"array-element-newline": "off",
+		"space-before-function-paren": "off"
 	}
 }
