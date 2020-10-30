@@ -39,3 +39,7 @@
 ## 삽질
 
 웹팩 5 ㅠㅠ 빌드 버전문제 (webpack 3개 패키지랑 플러그인까지)
+
+axios
+
+eslint 개선 https://standardjs.com/rules-kokr.html
