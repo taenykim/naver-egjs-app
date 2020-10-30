@@ -1,0 +1,19 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"dev": "nodemon"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.6"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1"
+	}
+}
