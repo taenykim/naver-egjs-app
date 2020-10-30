@@ -1,5 +1,6 @@
-const init = () => {
-	console.log("test");
-};
+import Vue from "vue";
+import AppComponent from "./components/AppComponent.vue";
 
-init();
+new Vue({
+	render: h => h(AppComponent),
+}).$mount("#app");
