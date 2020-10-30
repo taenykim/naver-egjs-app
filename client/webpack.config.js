@@ -1,6 +1,7 @@
 const path = require("path");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
 	mode: process.env.NODE_ENV, // ['development', 'production']
@@ -41,6 +42,7 @@ module.exports = {
 			title: "My App",
 			template: "../server/public/index.html",
 		}),
+		new VueLoaderPlugin(),
 	],
 	optimization: {
 		minimize: true,
