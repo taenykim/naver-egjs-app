@@ -11,3 +11,7 @@
   - use vuejs with webpack
   - use egjs
 - deploy site : .
+
+## 삽질
+
+웹팩 5 ㅠㅠ 빌드 버전문제 (webpack 3개 패키지랑 플러그인까지)
