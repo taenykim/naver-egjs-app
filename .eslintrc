@@ -1,0 +1,6 @@
+{
+  "extends": "naver",
+  "rules": {
+    // 프로젝트별 적용할 Rules
+  }
+}
