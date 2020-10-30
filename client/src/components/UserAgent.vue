@@ -1,9 +1,17 @@
 <template>
-	<div>하이</div>
+	<div @click="getUserAgent">하이</div>
 </template>
 
 <script>
-export default {};
+import userAgentAPI from "../api/userAgentAPI";
+export default {
+	methods: {
+		async getUserAgent() {
+			const response = await userAgentAPI.get();
+			console.log(response.data.message);
+		},
+	},
+};
 </script>
 
 <style>
