@@ -30,6 +30,7 @@
 		"webpack-dev-server": "^3.11.0"
 	},
 	"dependencies": {
+		"@egjs/agent": "^2.2.1",
 		"vue": "^2.6.12"
 	}
 }
