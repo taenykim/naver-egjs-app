@@ -33,6 +33,7 @@ module.exports = {
 
 		alias: {
 			"@src": path.join(__dirname, "src"),
+			vue: "vue/dist/vue.js",
 		},
 	},
 	externals: {},
@@ -52,6 +53,7 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, "../server/public/js"),
 		publicPath: "/",
+		historyApiFallback: true,
 		host: "localhost",
 		overlay: true,
 		port: 8080,
