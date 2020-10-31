@@ -4,5 +4,6 @@
 		"array-element-newline": "off",
 		"space-before-function-paren": "off",
 		"operator-linebreak": "off"
-	}
+	},
+	"parser": "babel-eslint"
 }
