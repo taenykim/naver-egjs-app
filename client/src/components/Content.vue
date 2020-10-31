@@ -1,5 +1,5 @@
 <template>
-	<div class="content" :style="{backgroundColor: bgColor}" @click="getUserAgent">
+	<div class="content" :style="{backgroundColor: bgColor}">
 		<router-link :to="{path: '/' + path}">
 			<div class="title">{{ title }}</div>
 		</router-link>
@@ -9,15 +9,9 @@
 </template>
 
 <script>
-import userAgentAPI from "../api/userAgentAPI";
 export default {
 	props: ["title", "description", "bgColor", "path"],
-	methods: {
-		async getUserAgent() {
-			const response = await userAgentAPI.get();
-			console.log(response.data.message);
-		},
-	},
+	methods: {},
 };
 </script>
 
