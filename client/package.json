@@ -31,6 +31,7 @@
 	},
 	"dependencies": {
 		"@egjs/agent": "^2.2.1",
+		"@egjs/axes": "^2.7.2",
 		"axios": "^0.21.0",
 		"vue": "^2.6.12",
 		"vue-router": "^3.4.8"
