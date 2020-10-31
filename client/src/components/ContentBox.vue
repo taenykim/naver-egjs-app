@@ -6,6 +6,7 @@
 			:title="egjs.title"
 			:description="egjs.description"
 			:bgColor="egjs.bgColor"
+			:path="egjs.path"
 		/>
 	</div>
 </template>
@@ -24,6 +25,7 @@ export default {
 					description:
 						"Extracts browser and operating system information from the user agent string or user agent object(userAgentData).",
 					bgColor: "rgb(250, 217, 217)",
+					path: "agent",
 				},
 				{
 					title: "Axes",
