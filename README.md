@@ -17,6 +17,8 @@
 
 ### [egjs-agent](https://github.com/naver/egjs-agent) [[website](https://naver.github.io/egjs-agent/)]
 
+- Navigator Interface
+- get User Information
 - Dark Mode
 - ref : FEConf's Dark mode session
 
