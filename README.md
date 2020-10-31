@@ -10,11 +10,15 @@
 - goals
   - use vuejs with webpack
   - use egjs
+  - use graphql
 - deploy site : .
 
 ## egjs
 
 ### [egjs-agent](https://github.com/naver/egjs-agent) [[website](https://naver.github.io/egjs-agent/)]
+
+- Dark Mode
+- ref : FEConf's Dark mode session
 
 ### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
 
@@ -36,10 +40,6 @@
 
 ### [egjs-jquery-transform](https://github.com/naver/egjs-jquery-transform) [[website](https://naver.github.io/egjs-jquery-transform/)]
 
-## 삽질
+## Memo
 
-웹팩 5 ㅠㅠ 빌드 버전문제 (webpack 3개 패키지랑 플러그인까지)
-
-axios
-
-eslint 개선 https://standardjs.com/rules-kokr.html
+eslint naver https://standardjs.com/rules-kokr.html
