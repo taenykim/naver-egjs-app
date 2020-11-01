@@ -39,6 +39,12 @@ export default {
 					bgColor: "rgb(250, 217, 217)",
 					path: "component",
 				},
+				{
+					title: "Flicking",
+					description: "none",
+					bgColor: "rgb(222, 240, 247)",
+					path: "flicking",
+				},
 			],
 		};
 	},
