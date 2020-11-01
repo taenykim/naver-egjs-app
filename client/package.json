@@ -33,6 +33,7 @@
 		"@egjs/agent": "^2.2.1",
 		"@egjs/axes": "^2.7.2",
 		"@egjs/component": "^2.2.2",
+		"@egjs/flicking": "^3.6.1",
 		"axios": "^0.21.0",
 		"vue": "^2.6.12",
 		"vue-router": "^3.4.8"
