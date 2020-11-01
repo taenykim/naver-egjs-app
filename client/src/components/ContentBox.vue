@@ -45,6 +45,12 @@ export default {
 					bgColor: "rgb(222, 240, 247)",
 					path: "flicking",
 				},
+				{
+					title: "Infinitegrid",
+					description: "none",
+					bgColor: "rgb(250, 217, 217)",
+					path: "infinitegrid",
+				},
 			],
 		};
 	},
