@@ -12,9 +12,14 @@ export default {};
 <style lang="scss" scoped>
 header {
 	text-align: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 10;
 }
 #logo {
 	padding: 20px 0px 20px 0px;
+	background: #fff;
 }
 nav {
 	display: flex;
