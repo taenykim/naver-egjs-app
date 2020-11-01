@@ -31,6 +31,7 @@ export default {
 					title: "Axes",
 					description: "none",
 					bgColor: "rgb(222, 240, 247)",
+					path: "axes",
 				},
 			],
 		};
