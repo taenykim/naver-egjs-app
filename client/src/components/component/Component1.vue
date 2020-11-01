@@ -10,7 +10,8 @@ import egComponent from "./EgComponent";
 import generateRandomColor from "../../utils/generateRandomColor";
 
 export default {
-	created() {
+	mounted() {
+		egComponent.off("CHANGE_COMPONENT1");
 		egComponent.on("CHANGE_COMPONENT1", this.changeComponent1.bind(this));
 	},
 	methods: {
@@ -19,10 +20,7 @@ export default {
 			this.$refs.wrapper.style.backgroundColor = randomColor;
 		},
 		changeComponent2() {
-			console.log("트리거");
-
 			egComponent.trigger("CHANGE_COMPONENT2");
-			console.log(egComponent);
 		},
 	},
 };

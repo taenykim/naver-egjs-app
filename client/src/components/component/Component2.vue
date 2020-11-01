@@ -9,9 +9,9 @@ import egComponent from "./EgComponent";
 import generateRandomColor from "../../utils/generateRandomColor";
 
 export default {
-	created() {
+	mounted() {
+		egComponent.off("CHANGE_COMPONENT2");
 		egComponent.on("CHANGE_COMPONENT2", this.changeComponent2.bind(this));
-		console.log(this);
 	},
 	methods: {
 		changeComponent1() {
