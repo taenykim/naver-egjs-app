@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import ContentBox from "../components/ContentBox";
 import AgentWrapper from "../components/agent/AgentWrapper";
 import AxesWrapper from "../components/axes/AxesWrapper";
+import ComponentWrapper from "../components/component/ComponentWrapper";
 const NotFound = {template: `<div>Page Not Found</div>`};
 
 const router = new VueRouter({
@@ -14,6 +15,7 @@ const router = new VueRouter({
 		{path: "/", component: ContentBox},
 		{path: "/agent", component: AgentWrapper},
 		{path: "/axes", component: AxesWrapper},
+		{path: "/component", component: ComponentWrapper},
 		{path: "*", component: NotFound},
 	],
 });
