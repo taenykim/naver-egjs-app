@@ -36,6 +36,7 @@ eslint naver https://standardjs.com/rules-kokr.html
 - observer
 - bind this
 - fix [ca281a1](https://github.com/taenykim/naver-egjs-app/commit/ca281a11aedbf31ef8d4d8814a7dbc54dba6bcd3)
+- overlab -> error emit
 
 ### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
 
