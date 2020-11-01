@@ -13,6 +13,10 @@
   - use graphql
 - deploy site : .
 
+## egjs-config-naver
+
+eslint naver https://standardjs.com/rules-kokr.html
+
 ## egjs
 
 ### [egjs-agent](https://github.com/naver/egjs-agent) [[website](https://naver.github.io/egjs-agent/)]
@@ -48,7 +52,3 @@
 ### [egjs-jquery-pauseresume](https://github.com/naver/egjs-jquery-pauseresume) [[website](https://naver.github.io/egjs-jquery-pauseresume/)]
 
 ### [egjs-jquery-transform](https://github.com/naver/egjs-jquery-transform) [[website](https://naver.github.io/egjs-jquery-transform/)]
-
-## Memo
-
-eslint naver https://standardjs.com/rules-kokr.html
