@@ -24,7 +24,12 @@
 
 ### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
 
+- move, scale Element in static range
+- various examples
+
 ### [egjs-component](https://github.com/naver/egjs-component) [[website](https://naver.github.io/egjs-component/)]
+
+- observer
 
 ### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
 
