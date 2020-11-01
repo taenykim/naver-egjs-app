@@ -30,6 +30,7 @@
 ### [egjs-component](https://github.com/naver/egjs-component) [[website](https://naver.github.io/egjs-component/)]
 
 - observer
+- bind this
 
 ### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
 
