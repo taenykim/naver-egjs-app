@@ -18,5 +18,6 @@ export default {
 	width: 414px;
 	height: 100vh;
 	margin: 0 auto;
+	overflow-y: scroll;
 }
 </style>
