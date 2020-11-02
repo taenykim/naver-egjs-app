@@ -27,7 +27,7 @@ export default {
 		const isMobile = agentInfo.isMobile;
 		if (isMobile) mode = "dark";
 		console.log(agentInfo);
-		const info = agentInfo.browser.name + "," + agentInfo.os.name;
+		const info = JSON.stringify(agentInfo);
 		this.info = info;
 	},
 };
