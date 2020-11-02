@@ -51,6 +51,12 @@ export default {
 					bgColor: "rgb(250, 217, 217)",
 					path: "infinitegrid",
 				},
+				{
+					title: "Persist",
+					description: "none",
+					bgColor: "rgb(222, 240, 247)",
+					path: "persist",
+				},
 			],
 		};
 	},
