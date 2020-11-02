@@ -17,6 +17,7 @@
 		"babel-loader": "^8.1.0",
 		"core-js": "^3.6.5",
 		"css-loader": "^5.0.0",
+		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^4.5.0",
 		"sass": "^1.28.0",
 		"sass-loader": "^10.0.4",
@@ -36,6 +37,7 @@
 		"@egjs/flicking": "^3.6.1",
 		"@egjs/infinitegrid": "^3.6.3",
 		"@egjs/persist": "^2.2.2",
+		"@egjs/view360": "^3.3.3",
 		"axios": "^0.21.0",
 		"vue": "^2.6.12",
 		"vue-router": "^3.4.8"
