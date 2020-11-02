@@ -7,7 +7,7 @@ module.exports = {
 	mode: process.env.NODE_ENV, // ['development', 'production']
 	entry: "./src/index.js",
 	output: {
-		path: path.resolve(__dirname, "../server/public/js"),
+		path: path.resolve(__dirname, "./dist"),
 		filename: "index.min.js", // chunk시, [name][hash].js
 		libraryTarget: "umd", // ['var', 'this', 'commonjs', 'commonjs2', 'amd', 'umd']
 	},
@@ -54,7 +54,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "My App",
-			template: "../server/public/index.html",
+			template: "./index.html",
 		}),
 		new VueLoaderPlugin(),
 	],
@@ -64,7 +64,7 @@ module.exports = {
 	},
 	devtool: "cheap-eval-source-map",
 	devServer: {
-		contentBase: path.join(__dirname, "../server/public/js"),
+		contentBase: path.join(__dirname, "./dist"),
 		publicPath: "/",
 		historyApiFallback: true,
 		host: "localhost",

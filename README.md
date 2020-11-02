@@ -67,6 +67,6 @@ eslint naver https://standardjs.com/rules-kokr.html
 
 - intersection observer
 
-### [egjs-jquery-pauseresume](https://github.com/naver/egjs-jquery-pauseresume) [[website](https://naver.github.io/egjs-jquery-pauseresume/)]
+## graphql
 
-### [egjs-jquery-transform](https://github.com/naver/egjs-jquery-transform) [[website](https://naver.github.io/egjs-jquery-transform/)]
+- .
