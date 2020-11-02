@@ -5,14 +5,14 @@
 ![](https://img.shields.io/badge/-Node.Js-339933?&logo=Node.js&logoColor=white)
 ![](https://img.shields.io/badge/-Express.Js-010101?&logo=Node.js&logoColor=white)
 ![](https://img.shields.io/badge/-NCP-4ABF4D)
+![](https://img.shields.io/badge/-egjs-F7DF1E?&logo=JavaScript&logoColor=black)
 
 ## Project description
 
 - tech stacks : Vue, Webpack, Node.js(express), egjs, eslint-config-naver
 - goals
-  - use vuejs with webpack
+  - use Vuejs X Webpack X Express
   - use egjs
-  - use github action
 - deploy site : http://49.50.160.98:3000/
 
 ## egjs-config-naver
@@ -69,6 +69,6 @@ eslint naver https://standardjs.com/rules-kokr.html
 
 - intersection observer
 
-## github action
+## Vue X Webpack X Express
 
-- .
+- history fallback!
