@@ -1,11 +1,11 @@
 # naver-egjs-app
 
-![](https://img.shields.io/badge/-Vue-4FC08D?&logo=Vue.js&logoColor=white&color=white)
-![](https://img.shields.io/badge/-Webpack-8DD6F9?&logo=Webpack&logoColor=white&color=white)
-![](https://img.shields.io/badge/-Node.Js-339933?&logo=Node.js&logoColor=white&color=white)
-![](https://img.shields.io/badge/-Express.Js-010101?&logo=Node.js&logoColor=white&color=white)
-![](https://img.shields.io/badge/-NCP-4ABF4D&color=white)
-![](https://img.shields.io/badge/-egjs-F6C720&color=white)
+![](https://img.shields.io/badge/-Vue-4FC08D?&logo=Vue.js&logoColor=white)
+![](https://img.shields.io/badge/-Webpack-8DD6F9?&logo=Webpack&logoColor=white)
+![](https://img.shields.io/badge/-Node.Js-339933?&logo=Node.js&logoColor=white)
+![](https://img.shields.io/badge/-Express.Js-010101?&logo=Node.js&logoColor=white)
+![](https://img.shields.io/badge/-NCP-4ABF4D)
+![](https://img.shields.io/badge/-egjs-F6C720)
 
 ## 📝 Project description
 
