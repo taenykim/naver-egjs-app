@@ -44,7 +44,13 @@ eslint naver https://standardjs.com/rules-kokr.html
 
 ### [egjs-infinitegrid](https://github.com/naver/egjs-infinitegrid) [[website](https://naver.github.io/egjs-infinitegrid/)]
 
+- grid
+- css mansory option
+
 ### [egjs-persist](https://github.com/naver/egjs-persist) [[website](https://naver.github.io/egjs-persist/)]
+
+- snapshot
+- usage typo
 
 ### [egjs-rotate](https://github.com/naver/egjs-rotate) [[website](https://naver.github.io/egjs-rotate/)]
 
