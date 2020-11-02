@@ -11,6 +11,7 @@ import FlickingWrapper from "../components/flicking/FlickingWrapper";
 import InfinitegridWrapper from "../components/infinitegrid/InfinitegridWrapper";
 import PersistWrapper from "../components/persist/PersistWrapper";
 import View360 from "../components/view360/View360Wrapper";
+import Visible from "../components/visible/VisibleWrapper";
 const NotFound = {template: `<div>Page Not Found</div>`};
 
 const router = new VueRouter({
@@ -24,6 +25,7 @@ const router = new VueRouter({
 		{path: "/infinitegrid", component: InfinitegridWrapper},
 		{path: "/persist", component: PersistWrapper},
 		{path: "/view360", component: View360},
+		{path: "/visible", component: Visible},
 		{path: "*", component: NotFound},
 	],
 });
