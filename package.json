@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "NODE_ENV='development' webpack --watch",
 		"build": "NODE_ENV='production' webpack",
-		"dev": "NODE_ENV='development' webpack-dev-server"
+		"dev": "NODE_ENV='development' webpack-dev-server",
+		"deploy": "npm run build && node app"
 	},
 	"author": "",
 	"license": "ISC",
@@ -41,6 +42,7 @@
 		"@egjs/view360": "^3.3.3",
 		"@egjs/visible": "^2.1.0",
 		"axios": "^0.21.0",
+		"express": "^4.17.1",
 		"vue": "^2.6.12",
 		"vue-router": "^3.4.8"
 	}
