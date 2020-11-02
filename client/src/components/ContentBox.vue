@@ -13,6 +13,8 @@
 
 <script>
 import Content from "./Content.vue";
+import persist from "./persist/persist";
+
 export default {
 	components: {
 		Content,
@@ -59,6 +61,9 @@ export default {
 				},
 			],
 		};
+	},
+	mounted() {
+		console.log(persist);
 	},
 };
 </script>

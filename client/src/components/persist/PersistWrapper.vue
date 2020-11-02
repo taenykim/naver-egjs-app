@@ -6,7 +6,22 @@
 </template>
 
 <script>
-export default {};
+import persist from "./persist";
+export default {
+	mounted() {
+		// // Overwrite global object
+		// const snapshotObject = {
+		// 	list: [{name: "foo"}, {name: "bar"}],
+		// 	index: 0,
+		// };
+
+		// persist.set("hi", snapshotObject);
+		// const p = persist.get("hi");
+		// console.log(p, "p");
+		persist["name"] = "taeeun";
+		console.log(persist);
+	},
+};
 </script>
 
 <style scoped lang="scss">
