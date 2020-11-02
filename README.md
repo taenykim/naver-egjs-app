@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/-Node.Js-339933?&logo=Node.js&logoColor=white)
 ![](https://img.shields.io/badge/-Express.Js-010101?&logo=Node.js&logoColor=white)
 ![](https://img.shields.io/badge/-NCP-4ABF4D)
-![](https://img.shields.io/badge/-egjs-F7DF1E?&logo=JavaScript&logoColor=black)
+![](https://img.shields.io/badge/-egjs-F6C720)
 
 ## Project description
 
