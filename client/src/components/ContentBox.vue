@@ -59,6 +59,12 @@ export default {
 					bgColor: "rgb(222, 240, 247)",
 					path: "persist",
 				},
+				{
+					title: "View360",
+					description: "none",
+					bgColor: "rgb(250, 217, 217)",
+					path: "view360",
+				},
 			],
 		};
 	},
