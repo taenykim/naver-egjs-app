@@ -15,11 +15,11 @@
   - use egjs
 - deploy site : http://49.50.160.98:3000/
 
-## 🟣 preview
+## preview
 
 - preview
 
-## 🟢 egjs-config-naver
+## egjs-config-naver
 
 eslint naver https://standardjs.com/rules-kokr.html
 
@@ -73,6 +73,6 @@ eslint naver https://standardjs.com/rules-kokr.html
 
 - intersection observer
 
-## 🔵 Vue X Webpack X Express
+## Vue X Webpack X Express
 
 - history fallback!
