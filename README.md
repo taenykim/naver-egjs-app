@@ -51,6 +51,8 @@ eslint naver https://standardjs.com/rules-kokr.html
 
 - snapshot
 - usage typo
+- localstorage
+- ❌
 
 ### [egjs-rotate](https://github.com/naver/egjs-rotate) [[website](https://naver.github.io/egjs-rotate/)]
 
