@@ -3,6 +3,8 @@
 ![](https://img.shields.io/badge/-Vue-4FC08D?&logo=Vue.js&logoColor=white)
 ![](https://img.shields.io/badge/-Webpack-8DD6F9?&logo=Webpack&logoColor=white)
 ![](https://img.shields.io/badge/-Node.Js-339933?&logo=Node.js&logoColor=white)
+![](https://img.shields.io/badge/-Express.Js-010101?&logo=Node.js&logoColor=white)
+![](https://img.shields.io/badge/-NCP-4ABF4D)
 
 ## Project description
 
@@ -10,7 +12,8 @@
 - goals
   - use vuejs with webpack
   - use egjs
-- deploy site : https://naver-egjs-app.vercel.app/
+  - use github action
+- deploy site : http://49.50.160.98:3000/
 
 ## egjs-config-naver
 
@@ -65,3 +68,7 @@ eslint naver https://standardjs.com/rules-kokr.html
 ### [egjs-visible](https://github.com/naver/egjs-visible) [[website](https://naver.github.io/egjs-visible/)]
 
 - intersection observer
+
+## github action
+
+- .
