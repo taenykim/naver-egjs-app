@@ -52,11 +52,16 @@ eslint naver https://standardjs.com/rules-kokr.html
 - snapshot
 - usage typo
 - localstorage
-- ❌
+- ❌ [6c7c397](https://github.com/taenykim/naver-egjs-app/commit/6c7c397a5a16b06e82fd3ec99ac9f6b2a8360819)
 
 ### [egjs-rotate](https://github.com/naver/egjs-rotate) [[website](https://naver.github.io/egjs-rotate/)]
 
+- mobile only
+
 ### [egjs-view360](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/)]
+
+- pano viewer : mobile
+- spin viewer : jpg's frame
 
 ### [egjs-visible](https://github.com/naver/egjs-visible) [[website](https://naver.github.io/egjs-visible/)]
 
