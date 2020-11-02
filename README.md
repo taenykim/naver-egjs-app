@@ -10,8 +10,7 @@
 - goals
   - use vuejs with webpack
   - use egjs
-  - use graphql
-- deploy site : .
+- deploy site : https://naver-egjs-app.vercel.app/
 
 ## egjs-config-naver
 
@@ -66,7 +65,3 @@ eslint naver https://standardjs.com/rules-kokr.html
 ### [egjs-visible](https://github.com/naver/egjs-visible) [[website](https://naver.github.io/egjs-visible/)]
 
 - intersection observer
-
-## graphql
-
-- .
