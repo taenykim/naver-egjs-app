@@ -23,7 +23,7 @@ export default {
 		};
 	},
 	mounted() {
-		console.log("test");
+		console.log("test2");
 
 		const agentInfo = getAgent();
 		const isMobile = agentInfo.isMobile;
