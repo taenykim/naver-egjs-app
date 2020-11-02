@@ -8,6 +8,7 @@
 			When you use this app on your desktop, light mode is applied, and dark mode
 			is applied when you use it on mobile.
 		</div>
+		<div>{{ info }}</div>
 	</div>
 </template>
 
@@ -18,12 +19,16 @@ export default {
 	data() {
 		return {
 			mode: "light",
+			info: "info",
 		};
 	},
 	mounted() {
 		const agentInfo = getAgent();
 		const isMobile = agentInfo.isMobile;
 		if (isMobile) mode = "dark";
+		console.log(agentInfo);
+		const info = agentInfo.browser.name + "," + agentInfo.os.name;
+		this.info = info;
 	},
 };
 </script>
