@@ -9,6 +9,5 @@ if [ $local != $origin ]; then
   echo `cd ~/naver-egjs-app; git pull origin master`
 
   echo `cd ~/naver-egjs-app; npm i`
-  echo `cd ~/naver-egjs-app; npm run deploy`
-  pm2 restart
+  echo `cd ~/naver-egjs-app; npm run redeploy`
 fi
