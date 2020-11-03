@@ -8,7 +8,7 @@
 		"build": "NODE_ENV='production' webpack",
 		"dev": "NODE_ENV='development' webpack-dev-server",
 		"deploy": "npm run build && NODE_ENV='production' PORT=3000 pm2 start app.js",
-		"redploy": "npm run build && NODE_ENV='production' PORT=3000 pm2 restart app.js"
+		"redploy": "npm run build && NODE_ENV='production' PORT=3000 pm2 reload"
 	},
 	"author": "",
 	"license": "ISC",
