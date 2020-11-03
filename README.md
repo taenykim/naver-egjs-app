@@ -43,6 +43,30 @@
 
 - move, scale Element in static range
 - various examples
+- dynamic range, bounce when zoomed (why? `transform` doesn't change the actual dom size.)
+
+```js
+const CIRCLE_SIZE = 100;
+const zoomRatio = e.pos.zoom;
+const axes = new Axes({...})
+
+axes.axis.panX.range = [
+	(CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+	size[0] - CIRCLE_SIZE - (CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+];
+axes.axis.panX.bounce = [
+	(CIRCLE_SIZE * zoomRatio) / 5,
+	(CIRCLE_SIZE * zoomRatio) / 5,
+];
+axes.axis.panY.range = [
+	(CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+	size[1] - CIRCLE_SIZE - (CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+];
+axes.axis.panY.bounce = [
+	(CIRCLE_SIZE * zoomRatio) / 5,
+	(CIRCLE_SIZE * zoomRatio) / 5,
+];
+```
 
 ### [egjs-component](https://github.com/naver/egjs-component) [[website](https://naver.github.io/egjs-component/)]
 
