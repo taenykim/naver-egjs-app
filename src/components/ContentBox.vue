@@ -31,13 +31,14 @@ export default {
 				},
 				{
 					title: "Axes",
-					description: "none",
+					description:
+						"A module used to change the information of user action entered by various input devices such as touch screen or mouse into the logical virtual coordinates. You can easily create a UI that responds to user actions.",
 					bgColor: "rgb(222, 240, 247)",
 					path: "axes",
 				},
 				{
 					title: "Component",
-					description: "none",
+					description: "A class used to manage events and options in a component.",
 					bgColor: "rgb(250, 217, 217)",
 					path: "component",
 				},
