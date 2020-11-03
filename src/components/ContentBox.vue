@@ -44,13 +44,15 @@ export default {
 				},
 				{
 					title: "Flicking",
-					description: "none",
+					description:
+						"Reliable, flexible and extendable carousel used by 30 million people everyday.",
 					bgColor: "rgb(222, 240, 247)",
 					path: "flicking",
 				},
 				{
 					title: "Infinitegrid",
-					description: "none",
+					description:
+						"A module used to arrange card elements including content infinitely according to layout type. With this module, you can implement various layouts composed of different card elements whose sizes vary. It guarantees performance by maintaining the number of DOMs the module is handling under any circumstance",
 					bgColor: "rgb(250, 217, 217)",
 					path: "infinitegrid",
 				},

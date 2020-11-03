@@ -1,40 +1,49 @@
 <template>
 	<div class="wrapper">
 		<h2>Infinitegrid</h2>
-		<div id="grid"></div>
+		<div class="container">
+			<div id="grid"></div>
+		</div>
 	</div>
 </template>
 
 <script>
-import InfiniteGrid, {PackingLayout} from "@egjs/infinitegrid";
+import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
 import generateRandomColor from "../../utils/generateRandomColor";
 
 export default {
 	mounted() {
 		const template = () => {
 			const randomColor = generateRandomColor("0123456789ABCEF");
-			const randomWeight = Math.floor(100 + Math.random() * 100);
+			const randomWeight = Math.floor(100);
 			const randomHeight = Math.floor(100 + Math.random() * 100);
 			console.log({
 				randomWeight,
 				randomHeight,
 				ratio: randomWeight / randomHeight,
 			});
-			return `<div style='background-color:${randomColor}; width:${randomWeight}px; height:${randomHeight}px'></div>`;
+			return `<div class='item' style='background-color:${randomColor}; width:${randomWeight}px; height:${randomHeight}px'></div>`;
 		};
-		const templates = Array(12)
+		const templates = Array(1)
 			.fill(0)
 			.map(_ => template());
 		const ig = new InfiniteGrid("#grid");
 
-		ig.setLayout(PackingLayout, {
-			// ratioWeight: 10000,
+		ig.setLayout(GridLayout, {
+			align: "center",
+			horizontal: false,
 			margin: 10,
+			isOverflowScroll: true,
 		});
 		ig.on({
+			// change: function(e) {
+			// 	var pos = e.scrollPos;
+			// 	refresh(pos);
+			// },
 			append: function(e) {
-				const groupKey = e.groupKey + 1;
+				console.log(e);
 
+				const groupKey = Number(e.groupKey + 1);
 				ig.append(templates, groupKey);
 			},
 		});
@@ -43,7 +52,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style>
 .wrapper {
 	padding: 0px 20px 0px 20px;
 }
@@ -51,8 +60,38 @@ h2 {
 	margin: 0;
 	padding: 20px 0px 20px 0px;
 }
+.container {
+	height: 500px;
+	overflow: scroll;
+	position: relative;
+}
 
 #grid {
-	height: 1200px;
+	border: 1px solid red;
+	margin-bottom: 20px;
+	position: relative;
 }
+/* 
+.item {
+	width: 50px;
+	opacity: 0;
+}
+.item .thumbnail {
+	max-height: 100px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.item .thumbnail img {
+	width: 100%;
+}
+.item .info {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #777;
+}
+.item.animate {
+	transition: opacity ease 1s;
+	transition-delay: 0.2s;
+	opacity: 1;
+} */
 </style>
