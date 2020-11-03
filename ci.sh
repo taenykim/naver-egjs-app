@@ -8,7 +8,7 @@ local=`cd ~/naver-egjs-app; git rev-parse master`
 if [ $local != $origin ]; then
   echo `cd ~/naver-egjs-app; git pull origin master`
 
-  pm2 kill
   echo `cd ~/naver-egjs-app; npm i`
   echo `cd ~/naver-egjs-app; npm run deploy`
+  pm2 restart
 fi
