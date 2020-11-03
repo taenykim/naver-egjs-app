@@ -31,6 +31,7 @@ eslint naver https://standardjs.com/rules-kokr.html
 - get User Information
 - Dark Mode
 - ref : FEConf's Dark mode session
+- webview vs mobile web
 
 ### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
 
