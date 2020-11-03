@@ -4,11 +4,11 @@
 		<div class="agent-info">
 			{{ mode === "light" ? "this is light mode" : "this is dark mode" }}
 		</div>
-		<div>
+		<p>
 			When you use this app on your desktop, light mode is applied, and dark mode
 			is applied when you use it on mobile.
-		</div>
-		<div>{{ info }}</div>
+		</p>
+		<pre>{{ info }}</pre>
 	</div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
 		const agentInfo = getAgent();
 		const isMobile = agentInfo.isMobile;
 		if (isMobile) this.mode = "dark";
-		const info = JSON.stringify(agentInfo);
+		const info = JSON.stringify(agentInfo, null, 4);
 		this.info = info;
 		this.changeMode(this.mode);
 	},
@@ -50,14 +50,23 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-	padding: 0px 20px 0px 20px;
+	margin: 0px 20px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 h2 {
+	width: -webkit-fill-available;
 	margin: 0;
 	padding: 20px 0px 20px 0px;
 }
 .agent-info {
+	width: -webkit-fill-available;
 	font-weight: bold;
+	margin-bottom: 20px;
+}
+p {
+	width: -webkit-fill-available;
 	margin-bottom: 20px;
 }
 </style>

@@ -15,7 +15,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 #container {
-	width: 414px;
+	max-width: 414px;
+	width: 100%;
 	height: 100vh;
 	margin: 0 auto;
 	overflow-y: scroll;
