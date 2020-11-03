@@ -72,7 +72,7 @@ axes.axis.panY.bounce = [
 - observer
 - bind this
 - register(on) multiple events -> trigger each callback all
-- so, instance is destroyed, unregister(off) event [ca281a1](https://github.com/taenykim/naver-egjs-app/commit/ca281a11aedbf31ef8d4d8814a7dbc54dba6bcd3) [a9d4182]()
+- so, instance is destroyed, unregister(off) event
 
 ```js
 export default {
@@ -97,12 +97,16 @@ export default {
 
 ### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
 
+- touch 📱
 - infinite carousel
 
 ### [egjs-infinitegrid](https://github.com/naver/egjs-infinitegrid) [[website](https://naver.github.io/egjs-infinitegrid/)]
 
-- grid
-- css mansory option
+- scroll 💻
+- grid, mansory (ref : css new option)
+- gallery test log?
+- scroll event (compare intersection observer API)
+- dependency : egjs/component
 
 ### [egjs-persist](https://github.com/naver/egjs-persist) [[website](https://naver.github.io/egjs-persist/)]
 
