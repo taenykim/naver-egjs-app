@@ -22,9 +22,8 @@
 
 ## [egjs-config-naver](https://github.com/naver/eslint-config-naver)
 
-- array-element-newline [naver guide 4-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#arrays)
-
-- operator-linebreak [naver guide 15-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#comparison-operators--equality)
+- array-element-newline [[naver guide 4-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#arrays)]
+- operator-linebreak [[naver guide 15-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#comparison-operators--equality)]
 
 ## 🟡 egjs
 
@@ -72,8 +71,29 @@ axes.axis.panY.bounce = [
 
 - observer
 - bind this
-- fix [ca281a1](https://github.com/taenykim/naver-egjs-app/commit/ca281a11aedbf31ef8d4d8814a7dbc54dba6bcd3)
-- overlab -> error emit
+- register(on) multiple events -> trigger each callback all
+- so, instance is destroyed, unregister(off) event [ca281a1](https://github.com/taenykim/naver-egjs-app/commit/ca281a11aedbf31ef8d4d8814a7dbc54dba6bcd3) [a9d4182]()
+
+```js
+export default {
+	mounted() {
+		egComponent.on("CHANGE_COMPONENT2", this.changeComponent2.bind(this));
+	},
+	destroyed() {
+		egComponent.off("CHANGE_COMPONENT2");
+	},
+	methods: {
+		changeComponent1() {
+			egComponent.trigger("CHANGE_COMPONENT1");
+		},
+		changeComponent2() {
+			console.log("trigger change component2");
+			const randomColor = generateRandomColor("0123456789ABCEF");
+			this.$refs.wrapper.style.backgroundColor = randomColor;
+		},
+	},
+};
+```
 
 ### [egjs-flicking](https://github.com/naver/egjs-flicking) [[website](https://naver.github.io/egjs-flicking/)]
 
