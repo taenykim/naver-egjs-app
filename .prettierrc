@@ -4,6 +4,5 @@
 	"trailingComma": "all",
 	"bracketSpacing": false,
 	"functionSpacing": false,
-	"spaceBeforeFunctionParen": false,
 	"arrowParens": "avoid"
 }

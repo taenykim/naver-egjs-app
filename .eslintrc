@@ -1,9 +1,11 @@
 {
-	"extends": "naver",
+	"extends": ["naver"],
 	"rules": {
 		"array-element-newline": "off",
-		"space-before-function-paren": "off",
 		"operator-linebreak": "off"
 	},
-	"parser": "babel-eslint"
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "babel-eslint"
+	}
 }
