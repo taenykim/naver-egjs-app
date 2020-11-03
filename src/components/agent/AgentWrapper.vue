@@ -23,8 +23,6 @@ export default {
 		};
 	},
 	mounted() {
-		console.log("test4");
-
 		const agentInfo = getAgent();
 		const isMobile = agentInfo.isMobile;
 		if (isMobile) mode = "dark";
