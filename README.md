@@ -12,6 +12,7 @@
 - tech stacks : Vue, Webpack, Node.js(express), egjs, eslint-config-naver
 - goals
   - use Vuejs X Webpack X Express
+  - use eslint-config-naver
   - use egjs
 - deploy site : http://49.50.160.98:3000/
 
@@ -19,9 +20,11 @@
 
 - preview
 
-## egjs-config-naver
+## [egjs-config-naver](https://github.com/naver/eslint-config-naver)
 
-eslint naver https://standardjs.com/rules-kokr.html
+- array-element-newline [naver guide 4-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#arrays)
+
+- operator-linebreak [naver guide 15-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#comparison-operators--equality)
 
 ## 🟡 egjs
 
