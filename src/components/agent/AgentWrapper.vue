@@ -9,6 +9,7 @@
 			is applied when you use it on mobile.
 		</div>
 		<div>{{ info }}</div>
+		<div>{{ customInfo }}</div>
 	</div>
 </template>
 
@@ -20,6 +21,7 @@ export default {
 		return {
 			mode: "light",
 			info: "info",
+			customInfo: "customInfo",
 		};
 	},
 	mounted() {
@@ -29,6 +31,11 @@ export default {
 		console.log(agentInfo);
 		const info = JSON.stringify(agentInfo);
 		this.info = info;
+
+		// custom
+		const userAgent = navigator.userAgent.toLowerCase();
+		console.log(userAgent);
+		this.customInfo = JSON.stringify(userAgent);
 	},
 };
 </script>
