@@ -32,9 +32,12 @@
 
 - Navigator Interface
 - get User Information
-- Dark Mode
-- ref : FEConf's Dark mode session
-- webview vs mobile web
+- Dark Mode [ref : FEConf's Dark mode session](https://www.youtube.com/watch?v=ElsZ-v4Ow08)
+- webView
+- userAgent privacy Issue [ref: zdnet article](https://www.zdnet.com/article/google-to-phase-out-user-agent-strings-in-chrome/)
+- others
+  - pre tag
+  - css -webkit-fill-available
 
 ### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
 
