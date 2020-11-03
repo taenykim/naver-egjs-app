@@ -16,6 +16,7 @@ import Axes, {PanInput, PinchInput, WheelInput, MoveKeyInput} from "@egjs/axes";
 
 const baseScale = 0.5;
 const SUPPORT_TOUCH = "ontouchstart" in window;
+const CIRCLE_SIZE = 100;
 
 export default {
 	mounted() {
@@ -29,15 +30,15 @@ export default {
 		const axes = new Axes(
 			{
 				panX: {
-					range: [0, size[0] - 50],
-					bounce: 20,
+					range: [0, size[0] - CIRCLE_SIZE],
+					bounce: CIRCLE_SIZE / 5,
 				},
 				panY: {
-					range: [0, size[1] - 50],
-					bounce: 20,
+					range: [0, size[1] - CIRCLE_SIZE],
+					bounce: CIRCLE_SIZE / 5,
 				},
 				zoom: {
-					range: [1, 5],
+					range: [1, 3],
 					bounce: 1,
 				},
 			},
@@ -49,11 +50,28 @@ export default {
 		// 2. attach event handler
 		axes.on({
 			change: function(e) {
-				var pos = e.pos;
+				const pos = e.pos;
 
 				ui.style[
 					Axes.TRANSFORM
 				] = `translate3d(${pos.panX}px, ${pos.panY}px, 0) scale(${pos.zoom})`;
+				const zoomRatio = pos.zoom;
+				axes.axis.panX.range = [
+					(CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+					size[0] - CIRCLE_SIZE - (CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+				];
+				axes.axis.panX.bounce = [
+					(CIRCLE_SIZE * zoomRatio) / 5,
+					(CIRCLE_SIZE * zoomRatio) / 5,
+				];
+				axes.axis.panY.range = [
+					(CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+					size[1] - CIRCLE_SIZE - (CIRCLE_SIZE * zoomRatio - CIRCLE_SIZE) / 2,
+				];
+				axes.axis.panY.bounce = [
+					(CIRCLE_SIZE * zoomRatio) / 5,
+					(CIRCLE_SIZE * zoomRatio) / 5,
+				];
 			},
 		});
 
@@ -76,11 +94,6 @@ export default {
 		// 4. move to position
 		axes.setTo({panX: 0, panY: 0});
 	},
-	methods: {
-		getZoomedOffset(value, zoom, beforeZoom) {
-			return -(value / zoom - value / beforeZoom);
-		},
-	},
 };
 </script>
 
@@ -98,8 +111,8 @@ export default {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	background-color: dodgerblue;
 	transform-origin: center;
