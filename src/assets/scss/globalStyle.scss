@@ -4,3 +4,14 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+body.dark {
+	background-color: #222;
+	color: #fff;
+
+	& nav {
+		background-color: #444;
+		border-left: 10px solid #666;
+		border-right: 10px solid #666;
+	}
+}

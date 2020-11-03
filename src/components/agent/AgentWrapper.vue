@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper">
+	<div ref="wrapper" class="wrapper">
 		<h2>Agent</h2>
 		<div class="agent-info">
 			{{ mode === "light" ? "this is light mode" : "this is dark mode" }}
@@ -9,7 +9,6 @@
 			is applied when you use it on mobile.
 		</div>
 		<div>{{ info }}</div>
-		<div>{{ customInfo }}</div>
 	</div>
 </template>
 
@@ -21,21 +20,30 @@ export default {
 		return {
 			mode: "light",
 			info: "info",
-			customInfo: "customInfo",
 		};
+	},
+	watch: {
+		mode() {
+			this.changeMode(this.mode);
+		},
 	},
 	mounted() {
 		const agentInfo = getAgent();
 		const isMobile = agentInfo.isMobile;
-		if (isMobile) mode = "dark";
-		console.log(agentInfo);
+		if (isMobile) this.mode = "dark";
 		const info = JSON.stringify(agentInfo);
 		this.info = info;
-
-		// custom
-		const userAgent = navigator.userAgent.toLowerCase();
-		console.log(userAgent);
-		this.customInfo = JSON.stringify(userAgent);
+		this.changeMode(this.mode);
+	},
+	destroyed() {
+		this.changeMode("light");
+	},
+	methods: {
+		changeMode(mode) {
+			const body = document.body;
+			if (mode === "light") body.classList.remove("dark");
+			else if (mode === "dark") body.classList.add("dark");
+		},
 	},
 };
 </script>
@@ -43,8 +51,6 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
 	padding: 0px 20px 0px 20px;
-	background-color: #fff;
-	color: #000;
 }
 h2 {
 	margin: 0;

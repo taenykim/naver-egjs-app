@@ -19,7 +19,6 @@ header {
 }
 #logo {
 	padding: 20px 0px 20px 0px;
-	background: #fff;
 }
 nav {
 	display: flex;
