@@ -11,8 +11,10 @@ import generateRandomColor from "../../utils/generateRandomColor";
 
 export default {
 	mounted() {
-		egComponent.off("CHANGE_COMPONENT1");
 		egComponent.on("CHANGE_COMPONENT1", this.changeComponent1.bind(this));
+	},
+	destroyed() {
+		egComponent.off("CHANGE_COMPONENT1");
 	},
 	methods: {
 		changeComponent1() {
