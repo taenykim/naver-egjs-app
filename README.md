@@ -42,7 +42,7 @@
 ### [egjs-axes](https://github.com/naver/egjs-axes) [[website](https://naver.github.io/egjs-axes/)]
 
 - move, scale Element in static range
-- various examples
+- various examples ✅
 - dynamic range, bounce when zoomed (why? `transform` doesn't change the actual dom size.)
 
 ```js
