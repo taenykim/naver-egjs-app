@@ -1,9 +1,7 @@
 <template>
 	<div class="wrapper">
-		<h2>Infinitegrid (not yet)</h2>
-		<div class="container">
-			<div id="grid"></div>
-		</div>
+		<h2>Infinitegrid</h2>
+		<div class="container" ref="container"></div>
 	</div>
 </template>
 
@@ -11,9 +9,11 @@
 import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
 import generateRandomColor from "../../utils/generateRandomColor";
 
+let index = [0, 0];
+
 export default {
 	mounted() {
-		const template = () => {
+		const template = type => {
 			const randomColor = generateRandomColor("0123456789ABCEF");
 			const randomWeight = Math.floor(100);
 			const randomHeight = Math.floor(100 + Math.random() * 100);
@@ -22,32 +22,36 @@ export default {
 				randomHeight,
 				ratio: randomWeight / randomHeight,
 			});
-			return `<div class='item' style='background-color:${randomColor}; width:${randomWeight}px; height:${randomHeight}px'></div>`;
+			return `<div class='item' style='display:flex; justify-content:center; align-items:center; font-size:25px; font-weight:bold; color:white; text-shadow:2px 2px 2px black; background-color:${randomColor}; width:${randomWeight}px; height:${randomHeight}px'>${
+				type === "prepend" ? index[0]-- : index[1]++
+			}</div>`;
 		};
-		const templates = Array(1)
-			.fill(0)
-			.map(_ => template());
-		const ig = new InfiniteGrid("#grid");
+		const templates = (num, type) =>
+			type === "prepend"
+				? Array(num)
+						.fill(0)
+						.map(_ => template(type))
+						.reverse()
+				: Array(num)
+						.fill(0)
+						.map(_ => template(type));
 
-		ig.setLayout(GridLayout, {
-			align: "center",
-			horizontal: false,
-			margin: 10,
+		const ig = new InfiniteGrid(this.$refs.container, {
+			direction: "vertical",
 			isOverflowScroll: true,
 		});
-		ig.on({
-			// change: function(e) {
-			// 	var pos = e.scrollPos;
-			// 	refresh(pos);
-			// },
-			append: function(e) {
-				console.log(e);
-
-				const groupKey = Number(e.groupKey + 1);
-				ig.append(templates, groupKey);
-			},
+		ig.setLayout(GridLayout, {
+			margin: 20,
 		});
-		ig.append(templates, 0);
+
+		ig.on("prepend", function(e) {
+			ig.prepend(templates(14, "prepend"));
+		});
+		ig.on("append", function(e) {
+			ig.append(templates(14, "append"));
+		});
+
+		ig.append(templates(14, "append"));
 	},
 };
 </script>
@@ -65,13 +69,11 @@ h2 {
 }
 .container {
 	height: 500px;
-	overflow: scroll;
-	position: relative;
+	overflow: hidden scroll;
 }
 
 #grid {
 	border: 1px solid red;
-	margin-bottom: 20px;
 	position: relative;
 }
 /* 
