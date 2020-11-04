@@ -20,7 +20,7 @@
 
 - preview
 
-## [egjs-config-naver](https://github.com/naver/eslint-config-naver)
+## [eslint-config-naver](https://github.com/naver/eslint-config-naver)
 
 - array-element-newline [[naver guide 4-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#arrays)]
 - operator-linebreak [[naver guide 15-6](https://github.com/naver/eslint-config-naver/blob/master/STYLE_GUIDE.md#comparison-operators--equality)]
