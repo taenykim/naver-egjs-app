@@ -14,7 +14,7 @@
   - use Vuejs X Webpack X Express
   - use eslint-config-naver
   - use egjs
-- deploy site : http://49.50.160.98:3000/
+- deploy site : http://naver-egjs.tk:3000/
 
 ## preview
 
