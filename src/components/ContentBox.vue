@@ -58,28 +58,34 @@ export default {
 				},
 				{
 					title: "Persist",
-					description: "none",
+					description:
+						"Provide cache interface to handle persisted data among history navigation.",
 					bgColor: "rgb(222, 240, 247)",
 					path: "persist",
 				},
 				{
-					title: "View360",
-					description: "none",
+					title: "SpinViewer",
+					description: "Object 360 photo viewer",
 					bgColor: "rgb(250, 217, 217)",
-					path: "view360",
+					path: "spinViewer",
+				},
+				{
+					title: "PanoViewer",
+					description: "A panoramic media viewer for the mobile web",
+					bgColor: "rgb(222, 240, 247)",
+					path: "panoViewer",
 				},
 				{
 					title: "Visible",
-					description: "none",
-					bgColor: "rgb(222, 240, 247)",
+					description:
+						"A class that checks if an element is visible in the base element or viewport.",
+					bgColor: "rgb(250, 217, 217)",
 					path: "visible",
 				},
 			],
 		};
 	},
-	mounted() {
-		console.log(persist);
-	},
+	mounted() {},
 };
 </script>
 
