@@ -76,7 +76,7 @@ axes.axis.panY.bounce = [
 - observer
 - bind this
 - register(on) multiple events -> trigger each callback all
-- so, instance is destroyed, unregister(off) event
+- so, when instance is destroyed, unregister(off) event
 
 ```js
 export default {
@@ -107,7 +107,7 @@ export default {
 ### [egjs-infinitegrid](https://github.com/naver/egjs-infinitegrid) [[website](https://naver.github.io/egjs-infinitegrid/)]
 
 - scroll 💻
-- grid, mansory (ref : css new option)
+- grid, masonry (ref : css new grid option - masonry)
 - gallery test log?
 - scroll event (compare intersection observer API)
 - dependency : egjs/component
