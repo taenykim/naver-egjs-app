@@ -38,7 +38,7 @@ export default {
 					bounce: CIRCLE_SIZE / 5,
 				},
 				zoom: {
-					range: [1, 3],
+					range: [1, 2],
 					bounce: 1,
 				},
 			},
