@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper" ref="wrapper">
+	<div class="component-wrapper" ref="wrapper">
 		<h3>Component1</h3>
 		<button @click="changeComponent2">change Component2's color</button>
 	</div>
@@ -28,12 +28,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.wrapper {
+<style scoped lang="scss">
+.component-wrapper {
 	height: 100px;
-	background-color: cornflowerblue;
+	background-color: white;
 	border-radius: 10px;
 	margin: 0px 0px 20px 0px;
+	padding: 10px;
 }
 
 h3 {

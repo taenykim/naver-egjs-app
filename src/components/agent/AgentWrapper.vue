@@ -50,15 +50,24 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-	margin: 0px 20px 0px 20px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	height: 100vh;
+	background-color: #fff;
+}
+body.dark .wrapper {
+	background-color: #333;
+	color: #fff;
 }
 h2 {
+	color: black;
 	width: -webkit-fill-available;
 	margin: 0;
 	padding: 20px 0px 20px 0px;
+}
+body.dark h2 {
+	color: white;
 }
 .agent-info {
 	width: -webkit-fill-available;

@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper">
-		<h2>Infinitegrid</h2>
+		<h2>Infinitegrid (not yet)</h2>
 		<div class="container">
 			<div id="grid"></div>
 		</div>
@@ -54,9 +54,12 @@ export default {
 
 <style>
 .wrapper {
+	width: inherit;
+	height: 100vh;
 	padding: 0px 20px 0px 20px;
 }
 h2 {
+	color: white;
 	margin: 0;
 	padding: 20px 0px 20px 0px;
 }

@@ -1,7 +1,10 @@
 <template>
-	<div id="container">
+	<div id="root">
+		<div class="wallpaper"></div>
 		<Header />
-		<router-view></router-view>
+		<div id="container">
+			<router-view></router-view>
+		</div>
 	</div>
 </template>
 <script>
@@ -15,6 +18,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 #container {
+	font-family: "Nanum Gothic", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	max-width: 414px;
 	width: 100%;
 	height: 100vh;

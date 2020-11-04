@@ -16,10 +16,13 @@ export default {
 
 <style scoped lang="scss">
 .wrapper {
+	width: inherit;
+	height: 100vh;
 	padding: 0px 20px 0px 20px;
 }
 h2 {
 	margin: 0;
 	padding: 20px 0px 20px 0px;
+	color: white;
 }
 </style>

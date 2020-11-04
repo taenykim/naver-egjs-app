@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<div id="logo">NAVER</div>
+		<div id="logo"><span>NAVER</span> <span>egjs</span></div>
 	</header>
 </template>
 
@@ -19,5 +19,16 @@ header {
 }
 #logo {
 	padding: 20px 0px 20px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Fredoka One", cursive;
+	letter-spacing: 1px;
+
+	& > span:nth-child(1) {
+		color: #2fb500;
+	}
+	& > span:nth-child(2) {
+		color: #f6c720;
+	}
 }
 </style>

@@ -99,13 +99,18 @@ export default {
 
 <style scoped lang="scss">
 .wrapper {
+	width: inherit;
+	height: 100vh;
 	padding: 0px 20px 0px 20px;
+}
+h2 {
+	color: white;
 }
 .scene {
 	position: relative;
 	width: inherit;
 	height: 500px;
-	background-color: rgb(236, 236, 126);
+	background-color: #00000088;
 }
 .circle {
 	position: absolute;
@@ -114,7 +119,7 @@ export default {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	background-color: dodgerblue;
+	background-color: #fff;
 	transform-origin: center;
 }
 </style>

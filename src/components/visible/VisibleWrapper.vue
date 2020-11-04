@@ -80,6 +80,7 @@ h2 {
 .scroller {
 	height: 500px;
 	overflow-y: scroll;
+	border: 4px solid white;
 }
 .scale {
 	transform: scaleX(2);
