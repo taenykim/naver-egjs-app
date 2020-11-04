@@ -18,7 +18,9 @@
 
 ## preview
 
-- preview
+| desktop                   | mobile                     |
+| ------------------------- | -------------------------- |
+| ![](./images/preview.png) | ![](./images/preview2.png) |
 
 ## [eslint-config-naver](https://github.com/naver/eslint-config-naver)
 
