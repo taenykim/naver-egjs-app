@@ -7,7 +7,8 @@ import ComponentWrapper from "../components/component/ComponentWrapper";
 import FlickingWrapper from "../components/flicking/FlickingWrapper";
 import InfinitegridWrapper from "../components/infinitegrid/InfinitegridWrapper";
 import PersistWrapper from "../components/persist/PersistWrapper";
-import View360 from "../components/view360/View360Wrapper";
+import SpinViewer from "../components/spinViewer/SpinViewerWrapper";
+import PanoViewer from "../components/panoViewer/PanoViewerWrapper";
 import Visible from "../components/visible/VisibleWrapper";
 
 Vue.use(VueRouter);
@@ -24,7 +25,8 @@ const router = new VueRouter({
 		{path: "/flicking", component: FlickingWrapper},
 		{path: "/infinitegrid", component: InfinitegridWrapper},
 		{path: "/persist", component: PersistWrapper},
-		{path: "/view360", component: View360},
+		{path: "/spinViewer", component: SpinViewer},
+		{path: "/panoViewer", component: PanoViewer},
 		{path: "/visible", component: Visible},
 		{path: "*", component: NotFound},
 	],
