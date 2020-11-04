@@ -42,14 +42,22 @@ export default {
 }
 
 .icon {
+	@media (max-height: 660px) {
+		width: 50px;
+		height: 50px;
+	}
 	width: 80px;
 	height: 80px;
 	background-image: url("../assets/svg/directory.svg");
 	background-size: cover;
 	background-position: center;
+	margin: 0 auto;
 }
 
 .title {
+	@media (max-width: 660px) {
+		font-size: 8px;
+	}
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;

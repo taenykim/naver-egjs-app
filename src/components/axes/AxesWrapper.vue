@@ -109,7 +109,7 @@ h2 {
 .scene {
 	position: relative;
 	width: inherit;
-	height: 500px;
+	height: 300px;
 	background-color: #00000088;
 }
 .circle {
