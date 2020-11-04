@@ -1,7 +1,8 @@
 <template>
 	<div class="wrapper">
 		<h2>Persist</h2>
-		<div></div>
+		<button @click="addComponent">Add component</button>
+		<div ref="persistContainer"></div>
 	</div>
 </template>
 
@@ -9,17 +10,25 @@
 import persist from "./persist";
 export default {
 	mounted() {
-		// // Overwrite global object
-		// const snapshotObject = {
-		// 	list: [{name: "foo"}, {name: "bar"}],
-		// 	index: 0,
-		// };
-
-		// persist.set("hi", snapshotObject);
-		// const p = persist.get("hi");
-		// console.log(p, "p");
-		persist["name"] = "taeeun";
-		console.log(persist);
+		this.$refs.persistContainer.innerHTML = persist.get("persist");
+	},
+	methods: {
+		addComponent() {
+			if (persist.get("persist") === null) {
+				persist.set(
+					"persist",
+					"<div style='border-radius:10px; margin-top:10px; display:flex; justify-content:center; align-items:center; height:100px; background-color:#ddd;'>persist item added</div>",
+				);
+			} else {
+				persist.set(
+					"persist",
+					persist.get("persist") +
+						"<div style='border-radius:10px; margin-top:10px; display:flex; justify-content:center; align-items:center; height:100px; background-color:#ddd;'>persist item added</div>",
+				);
+			}
+			this.$refs.persistContainer.innerHTML = persist.get("persist");
+			console.log(persist.get("persist"));
+		},
 	},
 };
 </script>
