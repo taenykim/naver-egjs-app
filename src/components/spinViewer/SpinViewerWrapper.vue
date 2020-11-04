@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper">
-		<h2>View360</h2>
+		<h2>SpinViewer</h2>
 		<div id="mySpinViewer"></div>
 		<img ref="img" style="display: none" src="./images/spin_demo.jpg" alt="" />
 	</div>
