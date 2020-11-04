@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
 body {
 	margin: 0;
 	width: 100vw;
@@ -12,4 +15,21 @@ body.dark {
 	& #logo {
 		background-color: #222;
 	}
+}
+
+.wallpaper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../../../images/linebackground.jpg");
+	filter: opacity(0.7) brightness(0.3);
+	background-size: cover;
+	background-position: bottom;
+	z-index: -10;
+}
+
+a {
+	text-decoration: none;
 }
