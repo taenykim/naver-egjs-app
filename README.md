@@ -120,7 +120,7 @@ export default {
 
 - images frame -> make 3d
 
-### [egjs-view360-panoViewer](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/panoviewer.html]
+### [egjs-view360-panoViewer](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/panoviewer.html)]
 
 - 3d panorama image viewer
 
