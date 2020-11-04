@@ -113,16 +113,14 @@ export default {
 - snapshot
 - usage typo
 - localstorage
-- ❌ [6c7c397](https://github.com/taenykim/naver-egjs-app/commit/6c7c397a5a16b06e82fd3ec99ac9f6b2a8360819)
 
-### [egjs-rotate](https://github.com/naver/egjs-rotate) [[website](https://naver.github.io/egjs-rotate/)]
+### [egjs-view360-spinViewer](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/spinviewer.html)]
 
-- mobile only
+- images frame -> make 3d
 
-### [egjs-view360](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/)]
+### [egjs-view360-panoViewer](https://github.com/naver/egjs-view360) [[website](https://naver.github.io/egjs-view360/panoviewer.html]
 
-- pano viewer : mobile
-- spin viewer : jpg's frame
+- 3d panorama image viewer
 
 ### [egjs-visible](https://github.com/naver/egjs-visible) [[website](https://naver.github.io/egjs-visible/)]
 
@@ -130,4 +128,19 @@ export default {
 
 ## Vue X Webpack X Express
 
-- history fallback!
+- CSR + SSR -> history fallback!
+
+```js
+const express = require("express");
+
+const server = express();
+const path = require("path");
+
+server.use("/", express.static(path.join(__dirname, "./dist")));
+
+server.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "/dist", "index.html"));
+});
+
+server.listen(process.env.NODE_ENV === "production" ? process.env.PORT : 8080);
+```
