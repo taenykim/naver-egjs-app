@@ -7,6 +7,8 @@
 ![](https://img.shields.io/badge/-NCP-4ABF4D)
 ![](https://img.shields.io/badge/-egjs-F6C720)
 
+🟡 🟢 toy app using naver open-source egjs 📐
+
 ## 📝 Project description
 
 - tech stacks : Vue, Webpack, Node.js(express), egjs, eslint-config-naver
