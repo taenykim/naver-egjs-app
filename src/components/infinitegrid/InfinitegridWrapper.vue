@@ -38,6 +38,7 @@ export default {
 		});
 		ig.setLayout(GridLayout, {
 			margin: 20,
+			align: "center",
 		});
 
 		ig.on("prepend", function(e) {
