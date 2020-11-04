@@ -27,7 +27,6 @@ export default {
 				);
 			}
 			this.$refs.persistContainer.innerHTML = persist.get("persist");
-			console.log(persist.get("persist"));
 		},
 	},
 };

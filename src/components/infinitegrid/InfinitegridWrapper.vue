@@ -17,11 +17,7 @@ export default {
 			const randomColor = generateRandomColor("0123456789ABCEF");
 			const randomWeight = Math.floor(100);
 			const randomHeight = Math.floor(100 + Math.random() * 100);
-			console.log({
-				randomWeight,
-				randomHeight,
-				ratio: randomWeight / randomHeight,
-			});
+
 			return `<div class='item' style='display:flex; justify-content:center; align-items:center; font-size:25px; font-weight:bold; color:white; text-shadow:2px 2px 2px black; background-color:${randomColor}; width:${randomWeight}px; height:${randomHeight}px'>${
 				type === "prepend" ? index[0]-- : index[1]++
 			}</div>`;
@@ -51,7 +47,8 @@ export default {
 			ig.append(templates(14, "append"));
 		});
 
-		ig.append(templates(14, "append"));
+		ig.append(templates(7, "append"));
+		ig.prepend(templates(7, "prepend"));
 	},
 };
 </script>
