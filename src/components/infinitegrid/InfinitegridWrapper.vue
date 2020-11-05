@@ -9,10 +9,10 @@
 import InfiniteGrid, {GridLayout} from "@egjs/infinitegrid";
 import generateRandomColor from "../../utils/generateRandomColor";
 
-let index = [0, 0];
-
 export default {
 	mounted() {
+		let index = [0, 0];
+
 		const template = type => {
 			const randomColor = generateRandomColor("0123456789ABCEF");
 			const randomWeight = Math.floor(100);
