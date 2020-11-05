@@ -46,7 +46,7 @@
 
 - move, scale Element in static range
 - various examples ✅
-- dynamic range, bounce when zoomed (why? `transform` doesn't change the actual dom size.)
+- I added dynamic range, bounce when zoomed (why? `transform` doesn't change the actual dom size.)
 
 ```js
 const CIRCLE_SIZE = 100;
@@ -75,7 +75,7 @@ axes.axis.panY.bounce = [
 
 - observer
 - bind this
-- register(on) multiple events -> trigger each callback all
+- when register(on) multiple events, trigger each callback all
 - so, when instance is destroyed, unregister(off) event
 
 ```js
